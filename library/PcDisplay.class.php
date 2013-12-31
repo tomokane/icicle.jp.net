@@ -22,7 +22,7 @@
 		protected function displayHeader(){
 			echo 
 			'<!DOCTYPE html>'.
-			'<html>'.
+			'<html lang="ja"><meta charset ="utf-8">'.
 			'<head>';
 			$this->setMeta();
 			$this->setTitle();

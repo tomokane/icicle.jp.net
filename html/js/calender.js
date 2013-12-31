@@ -1,9 +1,15 @@
-
+	$(function() {
+		// Datepicker の初期化
+		$( "#datepicker" ).datepicker();
+		$( '#datepicker' ).datepicker( {
+        showButtonPanel: true
+	    } );
+	});
+/*
 $(function() {
-	// Datepicker の初期化
-	$( "#datepicker" ).datepicker();
-	// テキストボックスにフォーカスが当たった時と
-	// ボタンがクリックされたときにカレンダーを表示するオプション
-	$( "#datepicker" ).datepicker( "option", "showOn", 'both' );
+	$("#datepicker").datepicker();
+	$("#datepicker").datepicker("option", "showOn", 'button');
+	$("#datepicker").datepicker("option", "buttonImageOnly", true);
+	$("#datepicker").datepicker("option", "buttonImage", 'image/datepicker.png');
 });
-
+*/

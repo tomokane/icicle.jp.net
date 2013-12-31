@@ -27,7 +27,8 @@
 		 * メタタグ設定
 		 */
 		protected function setMeta(){
-//			echo 'メタタグ設定';
+			echo '<meta name="viewport" content="width=device-width, initial-scale=1.0">';
+			echo '<meta name="format-detection" content="telephone=no">';
  		}
 
 		/*
@@ -35,7 +36,9 @@
 		 */
 		protected function setStyleSheet(){
 			echo'<link rel="stylesheet" href="/js/jquery-ui/css/ui-lightness/jquery-ui-1.10.3.custom.min.css" type="text/css" media="screen" />';
+			echo'<link href="/css/bootstrap.min.css" rel="stylesheet">';
 			echo'<link rel="stylesheet" href="/css/DailyReport.css"                                           type="text/css" />';
+			echo'<link rel="stylesheet" href="/css/accordion.css"                                             type="text/css" />';
  		}
 
 		/*
@@ -43,6 +46,7 @@
 		 */
 		protected function setJavascript(){
 			echo'<script src="http://code.jquery.com/jquery.min.js"></script>';
+			echo'<script src="/js/bootstrap.min.js"></script>';
 			echo'<script src="/js/jquery-ui/js/jquery-ui-1.10.3.custom.min.js"></script>';
 			echo'<script src="/js/jquery-ui/development-bundle/ui/i18n/jquery.ui.datepicker-ja.js"></script>';
 			echo'<script src="/js/calender.js"></script>';

@@ -1,3 +1,4 @@
+
 <?php
 
 	require_once("SingletonConf.class.php");
@@ -36,9 +37,8 @@
 			return AuthorizedState::getInstance();
 		}
 
-		public function showDailyReportInput(){
-			//ファクトリークラス要実装
-			echo 'ログイン画面';
+		public function bootIcicle($libraryName){
+			echo 'ログアウト状態なのでログイン+登録画面に遷移';
 			exit;
 		}
 

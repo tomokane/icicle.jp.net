@@ -16,14 +16,14 @@
 	if(is_null($context) || $context === false){
 		$context = new User('ゲスト');
 	}
-
+/*
 	//debugcode 絶対ログイン状態になる
 	if(!$context->isAuthenticated()){
 		$context->switchState();
 	}
-	
+*/
 	//今のログイン状態をクッキーに保存
 	setcookie("context", serialize($context), time()+3600);
-	$context->showDailyReportInput();
-
-?>
+	$library = 'DailyReport';
+	$context->bootIcicle($library);
+	?>

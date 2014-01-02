@@ -9,6 +9,6 @@
 	interface UserState {
 		public function isAuthenticated();
 		public function nextState();
-		public function showDailyReportInput();
+		public function bootIcicle($libraryName);
 	}
 ?>

@@ -4,6 +4,7 @@
 	$SingletonConf   = SingletonConf::getSingletonConf();
 	require_once($SingletonConf->get_library_path().'UserState.class.php');
 	require_once($SingletonConf->get_library_path().'UnauthorizedState.class.php');
+	require_once($SingletonConf->get_library_path().'libraryFactory.class.php');
 
 	/*
 	 * ConcreteStateクラスに相当
@@ -32,15 +33,16 @@
 		}
 		
 		public function nextState(){
-			//次の状態(ログアウト状態)を返す
+			//次の状態(ログアウト状態)を返す + cookie削除する（あとでここに追記が必要
 			return UnauthorizedState::getInstance();
 		}
 
-		public function showDailyReportInput(){
-			//日報入力フォームへ※ファクトリークラス要実装
-			require_once(SingletonConf::getSingletonConf()->get_library_path().'PcDailyReport.class.php');
-			$PcDailyReportLibrary = new PcDailyReport();
-			$PcDailyReportLibrary->display();
+		//共通実行メソッド
+		public function bootIcicle($libraryName){
+
+			$factory = new libraryFactory();
+			$library = $factory->create($libraryName);
+			$library->display();
 			exit;
 		}
 

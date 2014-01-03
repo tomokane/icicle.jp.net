@@ -28,13 +28,13 @@
 				<div class="accordion-group">
 					<div class="accordion-heading">
 						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-							森永製菓
+							M製菓
 						</a>
 					</div>
 					<div id="collapseOne" class="accordion-body collapse" style="height: auto;">
 						<div class="accordion-inner">
 							<label class="control-label" for="task">・タスク</label>
-							<input type="text" class="form-control" value = "森永Biz"/>
+							<input type="text" class="form-control" value = "Biz"/>
 							<br />
 							<label class="control-label" for="before">・作業前進捗</label>
 							<input type="text" class="form-control" value = "未着手"/>
@@ -74,7 +74,7 @@
 							<br />
 							<br />
 							<label class="control-label" for="trouble">・明日の予定作業</label>
-							<input type="text" class="form-control" value = "引き続き森永Biz対応"/>
+							<input type="text" class="form-control" value = "引き続きBiz対応"/>
 							<br />
 						</div>
 					</div>
@@ -136,19 +136,19 @@
 				<div class="accordion-group">
 					<div class="accordion-heading">
 					<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
-						三井のリパーク
+						リパーク
 					</a>
 					</div>
 					<div id="collapseThree" class="accordion-body collapse">
 						<div class="accordion-inner">
 							<label class="control-label" for="task">・タスク</label>
-							<input type="text" class="form-control" value = "スマホサイト構築"/>
+							<input type="text" class="form-control" value = "サイト構築"/>
 							<br />
 							<label class="control-label" for="before">・作業前進捗</label>
-							<input type="text" class="form-control" value = "時間貸し駐車場GPS検索"/>
+							<input type="text" class="form-control" value = "検索機能"/>
 							<br />
 							<label class="control-label" for="after">・作業後進捗</label>
-							<input type="text" class="form-control" value = "時間貸し駐車場GPS検索処理作成中"/>
+							<input type="text" class="form-control" value = "検索処理作成中"/>
 							<br />
 							<label class="control-label" for="trouble">・直面している問題</label>
 							<input type="text" class="form-control" value = "オブジェクト指向が難しい"/>
@@ -182,7 +182,7 @@
 							<br />
 							<br />
 							<label class="control-label" for="trouble">・明日の予定作業</label>
-							<input type="text" class="form-control" value = "時間貸し駐車場GPS検索の続き"/>
+							<input type="text" class="form-control" value = "検索の続き"/>
 							<br />
 						</div>
 					</div>

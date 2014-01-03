@@ -16,6 +16,7 @@
 	if(is_null($context) || $context === false){
 		$context = new User('ゲスト');
 	}
+
 /*
 	//debugcode 絶対ログイン状態になる
 	if(!$context->isAuthenticated()){

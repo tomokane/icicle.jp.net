@@ -1,4 +1,5 @@
-
+{* stripでhtmlをminifyしています。 *}
+{strip}
 <nav class="navbar navbar-inverse">
 	<div class = "navbar-header">
 		<button class="navbar-toggle" data-toggle="collapse" data-target=".target">
@@ -206,3 +207,4 @@
 		</div>
 	</form>
 </div>
+{/strip}

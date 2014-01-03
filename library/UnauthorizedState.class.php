@@ -3,8 +3,8 @@
 
 	require_once("SingletonConf.class.php");
 	$SingletonConf   = SingletonConf::getSingletonConf();
-	require_once($SingletonConf->get_library_path().'UserState.class.php');
-	require_once($SingletonConf->get_library_path().'AuthorizedState.class.php');
+	require_once('UserState.class.php');
+	require_once('AuthorizedState.class.php');
 
 	/*
 	 * ConcreteStateクラスに相当

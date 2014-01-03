@@ -59,8 +59,8 @@
 			$this->include_path      = $this->icicle_path.'include/';
 			$this->smarty_path       = $this->include_path.'smarty/';
 			$this->library_path      = $this->icicle_path.'library/';
-			$this->template_path     = $this->icicle_path.'template/';
-			$this->template_cache_path = $this->icicle_path.'template_c/';
+			$this->template_path     = __DIR__.'/../template/';
+			$this->template_cache_path = __DIR__.'/../template_c/';
 			$this->javascript_path   = $this->document_root.'js/';
 		}
 

@@ -4,7 +4,7 @@
 	$SingletonConf = SingletonConf::getSingletonConf();
 	$library_path  = $SingletonConf->get_library_path();
 
-	require_once(SingletonConf::getSingletonConf()->get_library_path().'AbstractDisplay.class.php');
+	require_once('AbstractDisplay.class.php');
 	
 	class libraryFactory {
 
@@ -23,21 +23,13 @@
 		 */
 		private function createLibrary($libraryName){
 
-			require_once(SingletonConf::getSingletonConf()->get_library_path().'userAgent.class.php');
+			require_once('userAgent.class.php');
 			$deviceType = userAgent::getInstance()->getDeviceType();
 			$libraryFullName = $deviceType . $libraryName . '.class.php' ; 
 			$libraryName = $deviceType . $libraryName ; 
 			
-			//目的のライブラリの存在チェック + あれば読み込み
-			if(file_exists(SingletonConf::getSingletonConf()->get_library_path().$libraryFullName)){
-				require_once(SingletonConf::getSingletonConf()->get_library_path().$libraryFullName);
-				$library = new $libraryName();
-			}else{
-				//なかったら。。プラットフォーム別共通エラ-画面を呼び出す。
-				echo '$libraryFullName = ' . $libraryFullName;
-				echo 'そんなライブラないです';
-				exit;
-			}
+			require_once($libraryFullName);
+			$library = new $libraryName();
 			
 			return $library;
 		}

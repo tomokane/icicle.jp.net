@@ -4,7 +4,7 @@
 	$SingletonConf = SingletonConf::getSingletonConf();
 	$library_path  = $SingletonConf->get_library_path();
 
-	require_once($library_path.'AbstractDisplay.class.php');
+	require_once('AbstractDisplay.class.php');
 	
 	abstract class PcDisplay extends AbstractDisplay {
  		
@@ -13,7 +13,7 @@
 		 */
 		protected function executeCommonAction(){
 
-			require_once(SingletonConf::getSingletonConf()->get_smarty_path().'Smarty.class.php');			
+			// require_once('Smarty.class.php');			
 			$this->executeUniqueAction();
 		}
 		/*

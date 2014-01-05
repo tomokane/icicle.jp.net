@@ -1,0 +1,13 @@
+{
+    "name": "tomokane/icicle.jp.net",
+    "authors": [
+        {
+            "name": "Mikuto Himuro",
+            "email": "miku@himuro.com"
+        }
+    ],
+    "require": {
+        "smarty/smarty": "*"
+    },
+    "include-path": ["include/", "library"]
+}
